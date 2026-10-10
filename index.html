@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf4"><meta name="description" content="A warm birthday surprise full of memories, wishes and a little teddy named Chiku.">
+  <title>Happy Birthday My Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro" aria-label="Birthday introduction"><div class="intro-heart">♥</div><p class="intro-small">A little celebration made with love</p><h1>A Day Worth Remembering</h1><p class="intro-sub">Some days become special simply because someone special was born.</p><button id="skipIntro" class="skip-intro" type="button">Skip intro ↓</button></div>
+  <div id="hearts" aria-hidden="true"></div>
+  <audio id="bgMusic" preload="metadata"><source src="Music/Zindagi_Di_Paudi_Blessed_1.mp3" type="audio/mpeg"></audio>
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Play or pause birthday music">♫ <span id="musicLabel">Play music</span></button>
+
+  <main>
+    <section class="cinematic-hero" id="cinematicHero">
+      <div class="hero-stage hero-stage-heart"><p class="stage-kicker">a little something for my love</p><div class="intro-heart-big">♥</div><div class="pull-line">for you, always</div></div>
+      <div class="hero-title-card"><p class="title-mini">make a wish...</p><h1>Happy Birthday <span>My Love ❤️</span></h1><div class="title-swoosh"></div><p class="title-bottom">to the sweetest soul in the world</p></div>
+      <div class="chiku-stage" id="chikuStage">
+        <div class="chiku-glow"></div><span class="chiku-spark sparkle-1">✦</span><span class="chiku-spark sparkle-2">✧</span><span class="chiku-spark sparkle-3">✦</span><span class="chiku-spark sparkle-4">♡</span>
+        <div class="chiku" id="chiku" role="img" aria-label="A cute brown teddy bear named Chiku">
+          <div class="teddy-ear left-ear"><i class="teddy-inner-ear left-inner"></i></div><div class="teddy-ear right-ear"><i class="teddy-inner-ear right-inner"></i></div>
+          <div class="teddy-head"><div class="teddy-eye left-eye"></div><div class="teddy-eye right-eye"></div><div class="teddy-muzzle"><div class="teddy-nose"></div><div class="teddy-mouth"></div></div><div class="teddy-blush left-blush"></div><div class="teddy-blush right-blush"></div></div>
+          <div class="teddy-body"><div class="teddy-belly"></div><div class="teddy-arm left-arm"></div><div class="teddy-arm right-arm"></div><div class="teddy-leg left-leg"></div><div class="teddy-leg right-leg"></div></div>
+          <div class="chiku-bow"><i class="bow-left"></i><i class="bow-center"></i><i class="bow-right"></i></div><div class="chiku-tag">CHIKU ♥</div>
+        </div>
+        <div class="chiku-shadow"></div><div class="chiku-bubble" id="chikuBubble" aria-live="polite">Hi! I'm Chiku 🧸</div>
+        <div class="hero-calendar"><div class="hero-calendar-top"><span>DECEMBER</span><strong>2026</strong></div><div class="hero-calendar-week"><span>SU</span><span>MO</span><span>TU</span><span>WE</span><span>TH</span><span>FR</span><span>SA</span></div><div class="hero-calendar-days"><span></span><span></span><span>1</span><span>2</span><span>3</span><span class="birthday-date">4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span></div><div class="hero-calendar-bottom"><strong>04 DECEMBER 2026</strong><span>FRIDAY • YOUR SPECIAL DAY</span></div></div>
+        <div class="hero-countdown"><span>COUNTING DOWN TO YOUR DAY</span><div class="countdown-values"><b><strong id="days">--</strong><small>Days</small></b><b><strong id="hours">--</strong><small>Hours</small></b><b><strong id="minutes">--</strong><small>Minutes</small></b><b><strong id="seconds">--</strong><small>Seconds</small></b></div></div>
+        <button class="hero-continue" id="heroContinue" type="button"><span>Continue the story</span><b>↓</b></button>
+      </div>
+    </section>
+
+    <section class="letter-section" id="letter"><div class="section-heading"><span>A little something for you</span><h2>There's a letter inside...</h2><p>Open it when you're ready ❤️</p></div>
+      <div class="envelope-wrapper"><div id="envelope" class="envelope"><div class="envelope-back"></div><div class="letter"><div class="letter-content"><p class="letter-date">For my special person ❤️</p><h3>Happy Birthday, Meri Laado</h3><p id="typedLetter"></p><div class="letter-sign">With love, always ❤️</div></div></div><div class="envelope-front"></div><div class="envelope-flap"></div><div class="envelope-heart">♥</div></div><button id="openLetter" class="letter-btn" type="button">Open My Letter 💌</button></div>
+    </section>
+
+    <section id="memories" class="memories-section"><div class="section-heading memories-heading"><span>little pieces of forever</span><h2>Our Beautiful Memories</h2><p>Moments may pass, but the memories stay with us forever.</p></div>
+      <div class="featured-memory"><div class="featured-video"><video class="memory-video" autoplay muted loop playsinline controls preload="metadata"><source src="Image/WhatsApp Video 2026-07-29 at 5.50.09 AM.mp4" type="video/mp4"></video></div><div class="featured-text"><span>OUR STORY</span><h3>Every little moment became a memory.</h3><p>From ordinary days to moments we never want to forget — these are the pieces of our story that make everything special.</p><div class="memory-line"></div><small>Some memories deserve to be kept forever ❤️</small></div></div>
+      <div class="memory-grid">
+        <article class="memory-card memory-large"><img src="Image/af87f8e7-907b-4733-a729-8a8738fa8b72.jpg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 01</span><h3>A beautiful moment</h3></div></article>
+        <article class="memory-card"><img src="Image/WhatsApp Image 2026-07-29 at 5.50.08 AM (2).jpeg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 02</span><h3>That smile ❤️</h3></div></article>
+        <article class="memory-card"><img src="Image/WhatsApp Image 2026-07-29 at 5.50.08 AM.jpeg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 03</span><h3>One for the heart</h3></div></article>
+        <article class="memory-card"><img src="Image/WhatsApp Image 2026-07-29 at 5.50.09 AM.jpeg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 04</span><h3>Forever moment</h3></div></article>
+        <article class="memory-card memory-tall"><img src="Image/WhatsApp Image 2026-07-29 at 5.50.08 AM (1).jpeg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 05</span><h3>Captured forever</h3></div></article>
+        <article class="memory-card"><img src="Image/856c5279-bd71-4eb3-9e8a-a34c6df3cadf.jpg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 06</span><h3>Us ❤️</h3></div></article>
+        <article class="memory-card"><img src="Image/3847baa7-4d62-459f-8d45-ee4153600a34.jpg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 07</span><h3>Another little memory</h3></div></article>
+        <article class="memory-card memory-tall"><img src="Image/1a1ee96f-4836-4ddf-9be2-7ae4ac08fd70.jpg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 08</span><h3>Captured forever</h3></div></article>
+        <article class="memory-card memory-large"><video class="memory-video" controls muted loop playsinline preload="metadata"><source src="Image/WhatsApp Video 2026-07-29 at 5.50.09 AM.mp4" type="video/mp4"></video><div class="memory-overlay"><span>Memory in motion</span><h3>A moment to replay</h3></div></article>
+        <article class="memory-card"><img src="Image/121a3c24-d34b-4952-83ce-2c9ed2d29570.jpg" alt="Beautiful memory" loading="lazy"><div class="memory-overlay"><span>Memory 09</span><h3>Always special</h3></div></article>
+        <article class="memory-card"><img src="Image/download (1).jpg" alt="A special birthday memory" loading="lazy"><div class="memory-overlay"><span>Memory 10</span><h3>A little keepsake</h3></div></article>
+      </div>
+    </section>
+
+    <section class="cake-section" id="cakeSection"><div class="cake-bg-glow"></div><div class="section-intro cake-intro"><span class="section-number">01</span><p class="section-eyebrow">THE BIRTHDAY MOMENT</p><h2>Close your eyes.<span>Make a wish.</span></h2><p class="cake-description">Take a little moment for yourself. Think of something beautiful, something you truly wish for.</p></div>
+      <div class="cake-experience"><div class="cake-scene"><span class="cake-star star-a">✦</span><span class="cake-star star-b">✧</span><span class="cake-star star-c">✦</span><span class="cake-star star-d">✧</span><div class="birthday-cake" id="birthdayCake"><div class="candle-glow"></div><div class="candles"><div class="candle"><div class="flame"></div><div class="candle-stick"></div></div><div class="candle"><div class="flame"></div><div class="candle-stick"></div></div><div class="candle"><div class="flame"></div><div class="candle-stick"></div></div><div class="candle"><div class="flame"></div><div class="candle-stick"></div></div><div class="candle"><div class="flame"></div><div class="candle-stick"></div></div></div><div class="cake-top"><div class="cake-top-shine"></div><span class="cake-dot dot-1"></span><span class="cake-dot dot-2"></span><span class="cake-dot dot-3"></span><span class="cake-dot dot-4"></span><span class="cake-dot dot-5"></span><div class="cake-drip drip-1"></div><div class="cake-drip drip-2"></div><div class="cake-drip drip-3"></div><div class="cake-drip drip-4"></div></div><div class="cake-layer cake-layer-one"><div class="layer-highlight"></div></div><div class="cream-line cream-one"></div><div class="cake-layer cake-layer-two"><div class="layer-highlight"></div></div><div class="cream-line cream-two"></div><div class="cake-layer cake-layer-three"><div class="layer-highlight"></div></div><div class="cake-decoration"><span>✦</span><span>♡</span><span>✦</span></div><div class="cake-plate"><div class="plate-inner"></div></div></div></div>
+      <button class="wish-btn" id="wishBtn" type="button"><span class="wish-icon">✦</span><span class="wish-text">Tap to make your wish</span><span class="wish-arrow">→</span></button><p class="wish-hint">Make a wish and let the moment begin ✨</p><div class="wish-complete-message" id="wishCompleteMessage"><span class="complete-sparkle">✦</span><p>May your beautiful wish find its way to you.</p><span class="complete-sparkle">✦</span></div></div><canvas id="cakeFireworks" aria-hidden="true"></canvas>
+    </section>
+
+    <section class="final-section"><div class="final-content"><span>and this is only the beginning...</span><h2>May your life always <strong>keep blooming.</strong></h2><p>Happy Birthday to someone who makes ordinary moments feel extraordinary.</p><div class="final-heart">♥</div><a href="#cinematicHero" class="back-top">BACK TO THE BEGINNING ↑</a></div></section>
+  </main>
+  <footer class="footer"><span>✦</span><p>Made for your special day</p><small>May your year be filled with peaceful days, warm memories and reasons to smile. ♥</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
